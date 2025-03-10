@@ -8,6 +8,19 @@ body{
   left: 0;
   background-color: yellow;
 }
+
+@keyframes slide{
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 #nav-bar h1{
+  display: inline-block;
+  white-space: nowrap;
+  animation: slide 3s ease-in-out infinite;
   text-align: center;
 }
