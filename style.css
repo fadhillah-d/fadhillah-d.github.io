@@ -1,29 +1,133 @@
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url(fonts/CASCADIACODE.TTF);
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body{
-  background-color: rgb(21, 21, 21);
-}
-#nav-bar{
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-color: yellow;
+    background-color: rgb(21, 21, 21);
+  }
+
+/* header style */
+#header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(15, 15, 15);
 }
 
-@keyframes slide{
-  0% {
-    transform: translateX(0%);
-  }
-  50% {
-    transform: translateX(450%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
+#header h1{
+    display: flex;
+    margin-left: 100px;
+    padding-top: 0px;
+    font-family: 'Cascadia Code';
+    font-size: 27px;
+    color: rgb(37, 247, 118);
 }
 
-#nav-bar h1{
-  display: inline-block;
-  white-space: nowrap;
-  animation: slide 3s ease-in-out infinite;
-  text-align: center;
+#header #dot{
+    color: white;
+}
+
+#header #bracket{
+    color: rgb(255, 207, 77);
+}
+
+#header #menu-bar{
+    position: fixed;
+    display: flex;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+#header #menu-bar button{
+    border: none;
+    border-radius: 50%;
+}
+
+#header #menu-bar img{
+    padding: 2px;
+    margin-top: 2px;
+    width: 45px;
+    height: 45px;
+}
+
+@keyframes muter {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(1300%);}
+}
+
+
+#now-playing{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+}
+
+#now-playing h1{
+    color: white;
+    font-size: 23px;
+    font-family: 'Cascadia Code';
+
+    display: inline-block;
+    white-space: nowrap;
+    animation: muter 3s linear infinite;
+}
+
+
+#about {
+    position: relative;
+    margin-top: 140px;
+    margin-left: 140px;
+    margin-right: 65px;
+    padding: 20px;
+    background-color: rgb(202, 199, 242);
+    border-radius: 15px;
+}
+
+#about h1{
+    margin-left: 15px;
+    font-family: 'Cascadia Code';
+    color: rgb(21, 85, 212);
+}
+
+#about p{
+    margin-left: 50px;
+    font-size: 22px;
+    font-family: 'Cascadia Code';
+}
+
+#tugas {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 140px;
+    margin-right: 65px;
+    padding: 20px;
+    background-color: rgb(202, 199, 242);
+    border-radius: 15px;
+}
+
+#tugas h1{
+    margin-left: 15px;
+    font-family: 'Cascadia Code';
+    color: rgb(21, 85, 212);
+}
+
+#tugas li{
+    margin-left: 70px;
+}
+
+#tugas a{
+    margin-left: 5px;
+    font-family: 'Cascadia Code';
+    font-size: 25px;
 }
