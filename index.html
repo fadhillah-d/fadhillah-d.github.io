@@ -1,11 +1,48 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Home</title>
-  </head>
-  <body>
-    <div id="nav-bar">
-      <h1>Fadhillah Dinislamy</h1>
-    </div>
-  </body>
+<!DOCTYPE html>
+<html lang="en"> <!--this page is an english page.-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--lagu-->
+        <audio id="musik">
+            <source src="Different Heaven - Safe And Sound House NCS - Copyright Free Music - NoCopyrightSounds.mp3" type="audio/mpeg">
+        </audio>
+        <script>
+            function Music(){
+                var music = document.getElementById("musik");
+                audio.play();
+            }
+        </script>
+
+        <div id="now-playing">
+            <h1>Nama Lagu</h1>
+        </div>
+        <!--header-->
+        <div id="header">
+            <div id="menu-bar">
+                <button onclick="Music()"><img src="icons/play-button.png">
+            </div>
+            <h1>Fadhillah<span id="dot">.</span>Dinislamy<span id="bracket">()</span></h1>
+        </div>
+
+        <!--tugas dan about-->
+        <div id="about">
+            <h1> #NOTE: About Me</h1>
+            <p>
+                nama = "Fadhillah Dinislamy"
+                <br> tanggal_lahir = 1, "Juli", 2006
+                <br> universitas = "Universitas Riau"
+            </p>
+        </div>
+        
+        <div id="tugas">
+            <h1> #TODO: Tugas</h1>
+            <li>
+                <a href="UTS Sistem Multimedia - Fadhillah Dinislamy 2407112891.pdf">UTS</a>
+            </li>
+        </div>
+    </body>
 </html>
